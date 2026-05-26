@@ -121,7 +121,7 @@ Two models compared — Logistic Regression vs Random Forest.
 ### Finding 1 — Monthly Revenue Trend
 
 ![Monthly Revenue](monthly_revenue.png)
-![Monthly Revenue](montly_revenue_sql.png )
+![Monthly Revenue](montly_revenue_sql.png)
 
 Revenue grew consistently from Jan 2017 through Aug 2018. Clear seasonality peaks visible — November spike corresponds to Black Friday equivalent in Brazil.
 
