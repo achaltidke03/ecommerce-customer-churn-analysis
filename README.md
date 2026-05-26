@@ -130,7 +130,7 @@ Revenue grew consistently from Jan 2017 through Aug 2018. Clear seasonality peak
 ### Finding 2 — RFM Customer Segments
 
 ![RFM Segments](rfm_segments.png)!
-[RFM Segments](RFM_segments_sql.png )
+![RFM Segments](RFM_segments_sql.png )
 
 | Segment | Customers | Avg Recency | Avg Orders | Avg Revenue |
 |---|---|---|---|---|
@@ -145,7 +145,7 @@ Revenue grew consistently from Jan 2017 through Aug 2018. Clear seasonality peak
 
 ### Finding 3 — Churn Prediction Model
 
-![ROC Curve](roc_curve.png )
+![ROC Curve](roc_curve.png)
 
 | Model | ROC-AUC | Precision | Recall |
 |---|---|---|---|
