@@ -120,7 +120,8 @@ Two models compared — Logistic Regression vs Random Forest.
 
 ### Finding 1 — Monthly Revenue Trend
 
-![Monthly Revenue](01_monthly_revenue.png)
+![Monthly Revenue](monthly_revenue.png)
+![Monthly Revenue](montly_revenue_sql.png )
 
 Revenue grew consistently from Jan 2017 through Aug 2018. Clear seasonality peaks visible — November spike corresponds to Black Friday equivalent in Brazil.
 
@@ -128,7 +129,8 @@ Revenue grew consistently from Jan 2017 through Aug 2018. Clear seasonality peak
 
 ### Finding 2 — RFM Customer Segments
 
-![RFM Segments](04_rfm_segments.png)
+![RFM Segments](rfm_segments.png)!
+[RFM Segments](RFM_segments_sql.png )
 
 | Segment | Customers | Avg Recency | Avg Orders | Avg Revenue |
 |---|---|---|---|---|
@@ -141,32 +143,21 @@ Revenue grew consistently from Jan 2017 through Aug 2018. Clear seasonality peak
 
 ---
 
-### Finding 3 — Cohort Retention
+### Finding 3 — Churn Prediction Model
 
-![Cohort Retention](05_cohort_retention.png)
-
-- Month 0 → Month 1 retention: **8–12%** (typical for e-commerce)
-- Customers who return once are significantly more likely to buy again
-- Early cohorts (Jan–Mar 2017) show slightly better long-term retention
-
----
-
-### Finding 4 — Churn Prediction Model
-
-![ROC Curve](06_roc_curve.png)
+![ROC Curve](roc_curve.png )
 
 | Model | ROC-AUC | Precision | Recall |
 |---|---|---|---|
 | Logistic Regression | ~0.97 | High | High |
 | **Random Forest** | **>0.99** | **Higher** | **Higher** |
 
-![Feature Importance](07_feature_importance.png)
 
 **Most important feature: Recency** — by a large margin. A customer who bought last week is extremely unlikely to churn. One who hasn't bought in 6 months almost certainly has.
 
 ---
 
-### Finding 5 — Late Delivery Kills Review Scores
+### Finding 4 — Late Delivery Kills Review Scores
 
 | Delivery Bucket | Orders | Avg Review Score |
 |---|---|---|
@@ -174,6 +165,7 @@ Revenue grew consistently from Jan 2017 through Aug 2018. Clear seasonality peak
 | 1–7 Days Late | moderate | ~3.1 |
 | 8–14 Days Late | fewer | ~2.4 |
 | 15+ Days Late | few | ~1.8 |
+![Late Delivery](Late_delivery_impact.png)
 
 **Key Insight:** Every additional week late drops the review score by ~0.6 points. Delivery speed is the single biggest driver of customer satisfaction.
 
